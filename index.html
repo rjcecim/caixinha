@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeção de Rendimento CDB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.21.1/dist/date-fns.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Projeção de Rendimento CDB</h1>
+        <form id="investmentForm">
+            <div class="form-group">
+                <label for="valorInvestido">Valor Investido (R$):</label>
+                <input type="text" id="valorInvestido" required>
+            </div>
+            <div class="form-group">
+                <label for="dataInvestimento">Data do Investimento:</label>
+                <input type="date" id="dataInvestimento" required>
+            </div>
+            <div class="form-group">
+                <label for="cdiAnual">Taxa de CDI Anual (%):</label>
+                <input type="text" id="cdiAnual" required>
+            </div>
+            <button type="submit">Calcular Projeção</button>
+        </form>
+        <div id="result">
+            <h2>Projeção de Rendimento:</h2>
+            <ul id="projectionList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
